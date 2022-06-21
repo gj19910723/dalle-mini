@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
-  && pip install --upgrade "jax[cuda]==0.2.22" -f https://storage.googleapis.com/jax-releases/jax_releases.html \
+  && pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_releases.html \
   && pip install -q \
   git+https://github.com/borisdayma/dalle-mini.git \
   git+https://github.com/patil-suraj/vqgan-jax.git
